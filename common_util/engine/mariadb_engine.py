@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from constant.constant import AG_DB, AG_DB_URI
+from common_util.constant.constant import AG_DB, AG_DB_URI
 
 
 class ConnectionManager:

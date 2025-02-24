@@ -2,7 +2,7 @@ import logging
 import os
 
 from cryptography.fernet import Fernet
-from constant.constant import SECRET_KEY_PATH
+from common_util.constant.constant import SECRET_KEY_PATH
 
 # secret key를 최초 구동 시 로딩
 SECRET_KEY_CACHE: bytes
