@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="common-util",
+    name="applegreen-common",
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
@@ -12,7 +12,7 @@ setup(
     description="applegreen common python utility modules",
     author="boom!e",
     author_email="yellowfox07@gmail.com",
-    url="https://github.com/pastelstore/common-util.git",
+    url="https://github.com/pastelstore/applegreen-common.git",
     license="Apache Software License",
     classifiers=[
         "Programming Language :: Python :: 3",
