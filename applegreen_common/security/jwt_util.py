@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from jwt.exceptions import ExpiredSignatureError, InvalidTokenError
 
 from applegreen_common.constant.constant import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS, ALGORITHM
-from encryption import SECRET_KEY_CACHE
+from .encryption import SECRET_KEY_CACHE
 
 
 def create_access_token(data: dict, expire_delta: timedelta | None = None) -> str:

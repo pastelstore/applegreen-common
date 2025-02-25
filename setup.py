@@ -2,11 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="applegreen-common",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     install_requires=[
+        "bcrypt",
         "cryptography",
         "fastapi",
+        "pyjwt",
         "pymysql"
     ],
     description="applegreen common python utility modules",
