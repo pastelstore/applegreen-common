@@ -47,6 +47,15 @@ def decrypt_data(encrypted_text: str) -> str:
     return decrypted_text.decode()
 
 
+def get_secret_key():
+    global SECRET_KEY_CACHE
+
+    if not SECRET_KEY_CACHE:
+        load_key()
+
+    return  SECRET_KEY_CACHE
+
+
 # 최초 실행 시 암호화 키 생성
 if __name__ == "__main__":
     generate_key()
