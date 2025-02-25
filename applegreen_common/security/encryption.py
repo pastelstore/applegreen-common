@@ -4,8 +4,8 @@ import os
 from cryptography.fernet import Fernet
 from applegreen_common.constant.constant import SECRET_KEY_PATH
 
-# secret key를 최초 구동 시 로딩
-SECRET_KEY_CACHE: bytes
+# secret key를 캐싱하여 사용
+SECRET_KEY_CACHE: bytes = b''
 
 
 def generate_key():
@@ -53,7 +53,7 @@ def get_secret_key():
     if not SECRET_KEY_CACHE:
         load_key()
 
-    return  SECRET_KEY_CACHE
+    return SECRET_KEY_CACHE
 
 
 # 최초 실행 시 암호화 키 생성
