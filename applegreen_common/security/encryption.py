@@ -20,6 +20,9 @@ def generate_key():
 def load_key():
     global SECRET_KEY_CACHE
 
+    if not SECRET_KEY_PATH:
+        raise ValueError("SECRET_KEY_PATH is not set.")
+
     if not os.path.exists(SECRET_KEY_PATH):
         raise FileNotFoundError("Secret key not found.")
 
